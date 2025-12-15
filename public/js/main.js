@@ -49,10 +49,10 @@ const handleNavbarScroll = () => {
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(26, 26, 46, 0.99)';
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.4)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.99)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
         } else {
-            navbar.style.background = 'rgba(26, 26, 46, 0.98)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
             navbar.style.boxShadow = 'none';
         }
     });
