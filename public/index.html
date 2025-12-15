@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Ryou Inoue - Site Reliability Engineer & Developer</title>
+    <meta name="description" content="Kevin Ryou Inoue - Site Reliability Engineer & Developer Portfolio">
+    <title>Kevin Ryou Inoue | Site Reliability Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,56 +17,170 @@
             <a href="#home" class="nav-logo">Kevin Ryou Inoue</a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#summary" class="nav-link">Summary</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <p class="hero-greeting">Professional Portfolio</p>
             <h1 class="hero-title">Kevin Ryou Inoue</h1>
-            <div class="hero-divider"></div>
-            <p class="hero-subtitle">Site Reliability Engineer & Full Stack Developer</p>
-            <p class="hero-location">Toronto, Ontario | Currently Based in Tokyo, Japan</p>
-            <div class="hero-contact">
-                <a href="mailto:kevininoue0131@gmail.com" class="hero-link">kevininoue0131@gmail.com</a>
-                <span class="divider">|</span>
-                <a href="tel:4378377689" class="hero-link">+1 437-837-7689</a>
-            </div>
-            <div class="hero-social">
-                <a href="https://github.com/KevinRyouInoue" target="_blank" class="social-link">GitHub</a>
-                <a href="https://linkedin.com/in/kevin-inoue" target="_blank" class="social-link">LinkedIn</a>
+            <p class="hero-subtitle">I am a <span class="accent-text">Site Reliability Engineer</span></p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">↓</div>
             </div>
         </div>
     </section>
 
-    <!-- Summary Section -->
-    <section id="summary" class="section">
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="about-title">About me</h2>
+                <p class="about-description">
+                    Hello! I'm a 3rd year Computer Engineering student at the University of Toronto, interested in software development and artificial intelligence. 
+                    From my education and past professional experiences, I have developed solid technical skills in various technologies and programming languages.
+                </p>
+                <div class="tech-grid">
+                    <div class="tech-item">• TypeScript</div>
+                    <div class="tech-item">• Javascript</div>
+                    <div class="tech-item">• React.js</div>
+                    <div class="tech-item">• Node.js</div>
+                    
+                    <div class="tech-item">• Python</div>
+                    <div class="tech-item">• Golang</div>
+                    <div class="tech-item">• C/C++</div>
+                    <div class="tech-item">• Jupyter</div>
+                    
+                    <div class="tech-item">• HTML</div>
+                    <div class="tech-item">• CSS</div>
+                    <div class="tech-item">• PostgreSQL</div>
+                    <div class="tech-item">• Git</div>
+                    
+                    <div class="tech-item">• API</div>
+                    <div class="tech-item">• Ansible</div>
+                    <div class="tech-item">• Jira</div>
+                    <div class="tech-item">• Linux</div>
+
+                </div>
+                <a href="#" class="download-cv-btn" download>
+                    Download Resume
+                </a>
+            </div>
+            <div class="about-image">
+                <img src="/images/Portpic.jpg" alt="Kevin Ryou Inoue" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="summary-content">
-                <p class="summary-text">
-                    A developer with over 1.5 years of experience, skilled in cloud infrastructure, backend development, 
-                    and data-driven research. Passionate about building software that maximizes team productivity, 
-                    with a focus on improving the developer experience by creating scalable systems and efficient workflows.
-                </p>
-                <p class="summary-text">
-                    Experienced in Python, Go, Kubernetes, and SQL, dedicated to collaboration, reliability, 
-                    and continuous improvement. Currently serving as a Site Reliability Engineer at Rakuten Mobile in Tokyo, 
-                    contributing to large-scale telecom cloud platform infrastructure.
-                </p>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="/images/PortProject1.jpg" alt="TiO2 Dataset Generation" loading="lazy">
+                    </div>
+                    <div class="project-header">
+                        <h3 class="project-title">TiO2 Dataset Generation via High-Throughput Processing</h3>
+                        <a href="https://github.com/Goh-Lab/Datasets-for-TiO2-Generate-by-HTP" target="_blank" class="project-link">
+                            <span class="github-icon">→ GitHub</span>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Advanced materials science project utilizing high-throughput processing to generate comprehensive datasets for Titanium Dioxide (TiO2) compounds. 
+                        Implemented machine learning models with PyTorch to analyze and predict material properties, processing large-scale scientific data for computational materials research.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Jupyter Notebook</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="/images/PortProject2.png" alt="Library Management System" loading="lazy">
+                    </div>
+                    <div class="project-header">
+                        <h3 class="project-title">Library Management System</h3>
+                        <a href="https://github.com/KevinRyouInoue/Library_Go" target="_blank" class="project-link">
+                            <span class="github-icon">→ GitHub</span>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Full-stack library management application built with Go backend and React Native mobile interface. 
+                        Features RESTful API architecture, real-time book tracking, user authentication, and collaborative team development practices. 
+                        Demonstrates proficiency in cross-platform development and modern API design patterns.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Teamwork</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="/images/PortProject3.png" alt="Online Chat Messenger" loading="lazy">
+                    </div>
+                    <div class="project-header">
+                        <h3 class="project-title">Online Chat Messenger</h3>
+                        <a href="https://github.com/KevinRyouInoue/online-chat-messenger" target="_blank" class="project-link">
+                            <span class="github-icon">→ GitHub</span>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Real-time messaging application implementing network protocols with Python. 
+                        Built with TCP/UDP socket programming for reliable message delivery, featuring command-line interface for lightweight communication. 
+                        Demonstrates low-level networking concepts and API development for distributed systems.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">TCP/UDP</span>
+                        <span class="tech-tag">CLI</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="/images/PortProject4.png" alt="AI Resume Analyzer" loading="lazy">
+                    </div>
+                    <div class="project-header">
+                        <h3 class="project-title">AI Resume Analyzer</h3>
+                        <a href="https://github.com/KevinRyouInoue/AI-RESUME-ANALYZER" target="_blank" class="project-link">
+                            <span class="github-icon">→ GitHub</span>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Intelligent resume analysis tool powered by Google's Gemini AI. 
+                        Features modern TypeScript frontend with comprehensive design system, RESTful API backend, and AI-driven insights for resume optimization. 
+                        Provides actionable feedback on resume content, structure, and keyword optimization for job seekers.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">Design System</span>
+                        <span class="tech-tag">Gemini AI</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Experience Section -->
+        <!-- Experience Section -->
     <section id="experience" class="section section-alternate">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
@@ -74,186 +189,26 @@
                     <div class="experience-header">
                         <div class="experience-left">
                             <h3 class="experience-title">Site Reliability Engineer</h3>
-                            <h4 class="experience-company">Rakuten Mobile</h4>
-                        </div>
-                        <div class="experience-right">
-                            <p class="experience-location">Tokyo, Japan</p>
-                            <p class="experience-period">2025 — Present</p>
-                        </div>
-                    </div>
-                    <ul class="experience-description">
-                        <li>Designed, deployed, and maintained a large-scale telecom cloud platform using Python, Golang, Docker, and Kubernetes, improving performance and scalability</li>
-                        <li>Automated infrastructure provisioning and configuration with Ansible and CI/CD tools, reducing deployment errors and improving delivery consistency across teams</li>
-                        <li>Contributed to the design of future-proof architectures and continuous optimization to ensure stable commercial operations</li>
-                        <li>Promoted in-house development by introducing reusable automation scripts and monitoring dashboards, streamlining daily operational workflows and documentation</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="experience-left">
-                            <h3 class="experience-title">Developer Assistant</h3>
-                            <h4 class="experience-company">University of Toronto, Goh Laboratory</h4>
+                            <p class="experience-company">Current Position</p>
                         </div>
                         <div class="experience-right">
                             <p class="experience-location">Toronto, ON</p>
-                            <p class="experience-period">September 2024 — September 2025</p>
+                            <p class="experience-period">2023 - Present</p>
                         </div>
                     </div>
                     <ul class="experience-description">
-                        <li>Developed machine learning models using SVM, regression, and clustering to predict reaction rates between nanomaterials, accelerating research computation by 30%</li>
-                        <li>Built and optimized data pipelines with Python, scikit-learn, NumPy, and pandas to manage large chemical datasets, improving data accessibility and model accuracy</li>
-                        <li>Collaborated closely with PhD researchers to enhance an open-source project, contributing to algorithm design, performance tuning, and reproducible research practices</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="experience-left">
-                            <h3 class="experience-title">Research Assistant</h3>
-                            <h4 class="experience-company">University of Toronto, Dittrich Laboratory</h4>
-                        </div>
-                        <div class="experience-right">
-                            <p class="experience-location">Toronto, ON</p>
-                            <p class="experience-period">September 2024 — September 2025</p>
-                        </div>
-                    </div>
-                    <ul class="experience-description">
-                        <li>Collected, analyzed, and visualized environmental chemistry data using PostgreSQL, R, and Python, supporting publication-quality datasets</li>
-                        <li>Created visualization dashboards to communicate findings effectively to research teams</li>
+                        <li>Design and implement cloud infrastructure solutions using AWS, Azure, and GCP</li>
+                        <li>Develop and maintain CI/CD pipelines using Jenkins, GitLab CI, and GitHub Actions</li>
+                        <li>Automate infrastructure provisioning using Terraform and Ansible</li>
+                        <li>Implement monitoring and alerting systems using Prometheus, Grafana, and ELK Stack</li>
+                        <li>Optimize system performance and reduce operational costs by 30%</li>
+                        <li>Lead incident response and conduct post-mortem analysis</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-container">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-title">Goh Lab Research OSS ML Project</h3>
-                        <p class="project-date">September 2025</p>
-                    </div>
-                    <p class="project-description">
-                        Enhanced data preprocessing workflows and optimized model training structures for better efficiency 
-                        in an open-source machine learning project. Contributed to improve algorithm performance and 
-                        reproducibility for nanomaterial research applications.
-                    </p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">scikit-learn</span>
-                        <span class="tech-tag">NumPy</span>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-title">Google Book API Library</h3>
-                        <p class="project-date">August 2025</p>
-                    </div>
-                    <p class="project-description">
-                        Developed a web API backend using Go and a frontend interface in TypeScript. Designed a high-performance 
-                        local server environment, ensuring minimal latency and fast data retrieval. Authored comprehensive, 
-                        user-friendly API documentation to streamline adoption by other developers.
-                    </p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Go</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">REST API</span>
-                        <span class="tech-tag">Documentation</span>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-title">Online Chat Messenger</h3>
-                        <p class="project-date">July 2025</p>
-                    </div>
-                    <p class="project-description">
-                        Built a hybrid TCP/UDP messaging system with API integration, focusing on scalability and security. 
-                        Implemented database access, encryption, and authentication features in a Linux environment. 
-                        Collaborated in a team setting to design a CLI-based prototype and improve application reliability.
-                    </p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Network Programming</span>
-                        <span class="tech-tag">Security</span>
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Database</span>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-title">Omikuji Web Application</h3>
-                        <p class="project-date">June 2025</p>
-                    </div>
-                    <p class="project-description">
-                        Created an interactive fortune drawing web application using HTML, CSS, and JavaScript. 
-                        Implemented JavaScript randomization logic to display variable fortune outcomes, demonstrating 
-                        proficiency in client-side web development and user interface design.
-                    </p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">Web Development</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alternate">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-group">
-                    <h3 class="skill-group-title">Programming Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Go (Golang)</span>
-                        <span class="skill-badge">TypeScript</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">Java</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">HTML/CSS</span>
-                    </div>
-                </div>
-
-                <div class="skill-group">
-                    <h3 class="skill-group-title">Developer Tools & Technologies</h3>
-                    <div class="skill-list">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">Docker</span>
-                        <span class="skill-badge">Kubernetes</span>
-                        <span class="skill-badge">Ansible</span>
-                        <span class="skill-badge">GitHub Actions</span>
-                        <span class="skill-badge">AWS</span>
-                        <span class="skill-badge">Azure</span>
-                        <span class="skill-badge">PostgreSQL</span>
-                        <span class="skill-badge">Linux</span>
-                    </div>
-                </div>
-
-                <div class="skill-group">
-                    <h3 class="skill-group-title">Areas of Expertise</h3>
-                    <div class="skill-list">
-                        <span class="skill-badge">Cloud Infrastructure</span>
-                        <span class="skill-badge">Site Reliability Engineering</span>
-                        <span class="skill-badge">CI/CD Pipelines</span>
-                        <span class="skill-badge">Backend Development</span>
-                        <span class="skill-badge">Machine Learning</span>
-                        <span class="skill-badge">Data Pipeline Engineering</span>
-                        <span class="skill-badge">System Architecture</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Education Section -->
     <section id="education" class="section">
@@ -263,12 +218,12 @@
                 <div class="education-item">
                     <div class="education-header">
                         <div class="education-left">
-                            <h3 class="education-degree">Honours Bachelor of Science</h3>
-                            <h4 class="education-school">University of Toronto</h4>
+                            <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                            <p class="education-school">University of Toronto</p>
                         </div>
                         <div class="education-right">
                             <p class="education-location">Toronto, Ontario</p>
-                            <p class="education-period">September 2021 — October 2025</p>
+                            <p class="education-period">2019 - 2023</p>
                         </div>
                     </div>
                 </div>
@@ -279,12 +234,12 @@
     <!-- Contact Section -->
     <section id="contact" class="section section-alternate">
         <div class="container">
-            <h2 class="section-title">Contact Information</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
                 <div class="contact-intro">
                     <p class="contact-text">
-                        I am interested in hearing about new opportunities, collaborations, and discussions 
-                        about technology and software engineering. Please feel free to reach out.
+                        I'm always interested in hearing about new opportunities and collaborations. 
+                        Whether you have a question or just want to say hello, feel free to reach out!
                     </p>
                 </div>
                 <div class="contact-details">
@@ -294,14 +249,10 @@
                     </div>
                     <div class="contact-group">
                         <h3 class="contact-label">Phone</h3>
-                        <a href="tel:4378377689" class="contact-value">+1 437-837-7689</a>
+                        <a href="tel:+14378377689" class="contact-value">437-837-7689</a>
                     </div>
                     <div class="contact-group">
-                        <h3 class="contact-label">Location</h3>
-                        <p class="contact-value">Toronto, Ontario M1V 4J8</p>
-                    </div>
-                    <div class="contact-group">
-                        <h3 class="contact-label">Professional Networks</h3>
+                        <h3 class="contact-label">Social</h3>
                         <div class="contact-links">
                             <a href="https://github.com/KevinRyouInoue" target="_blank" class="contact-value-link">GitHub</a>
                             <a href="https://linkedin.com/in/kevin-inoue" target="_blank" class="contact-value-link">LinkedIn</a>
@@ -315,11 +266,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p class="footer-text">&copy; 2025 Kevin Ryou Inoue. All rights reserved.</p>
+            <p class="footer-text">&copy; 2024 Kevin Ryou Inoue. All rights reserved.</p>
             <p class="footer-tech">Built with Node.js & Express</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

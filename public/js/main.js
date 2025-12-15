@@ -3,6 +3,29 @@
 // Kevin Ryou Inoue
 // ===================================
 
+// Theme Toggle Functionality
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.querySelector('.theme-icon');
+const htmlElement = document.documentElement;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+htmlElement.setAttribute('data-theme', currentTheme);
+updateThemeIcon(currentTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -27,7 +50,6 @@ const updateActiveNav = () => {
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             
             if (window.pageYOffset >= sectionTop - 200) {
                 current = section.getAttribute('id');
@@ -35,26 +57,11 @@ const updateActiveNav = () => {
         });
         
         navLinks.forEach(link => {
-            link.style.color = '';
+            link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
-                link.style.color = 'var(--accent-gold)';
+                link.classList.add('active');
             }
         });
-    });
-};
-
-// Enhanced navbar on scroll
-const handleNavbarScroll = () => {
-    const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(26, 26, 46, 0.99)';
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.4)';
-        } else {
-            navbar.style.background = 'rgba(26, 26, 46, 0.98)';
-            navbar.style.boxShadow = 'none';
-        }
     });
 };
 
@@ -114,21 +121,8 @@ const initSectionTransitions = () => {
 // Initialize all features
 document.addEventListener('DOMContentLoaded', () => {
     updateActiveNav();
-    handleNavbarScroll();
     observeElements();
     initSectionTransitions();
-    
-    // Add smooth hover effects to skill badges
-    const skillBadges = document.querySelectorAll('.skill-badge, .tech-tag');
-    skillBadges.forEach(badge => {
-        badge.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.05)';
-        });
-        
-        badge.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
-    });
 
     // Professional console message
     console.log('%c━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'color: #c9a961');
@@ -136,13 +130,4 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('%cSite Reliability Engineer & Developer', 'color: #b8c1cc; font-size: 14px');
     console.log('%c━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'color: #c9a961');
     console.log('%cBuilt with Node.js & Express', 'color: #8892a0; font-size: 12px; font-style: italic');
-});
-
-// Add smooth page load
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.5s ease';
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 100);
 });
