@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Welcome to my **personal portfolio website**! Built with **React, TypeScript, and Tailwind CSS**, the site is fully responsive and showcases my skills, projects, and experiences in software development.
+Welcome to my **personal portfolio website**! Built with **JavaScript, and HTML/CSS**, the site is fully responsive and showcases my skills, projects, and experiences in software development.
 
 🔗 [Visit My Portfolio](https://portfolio-kevin-inoue-ryou.vercel.app/)
 
