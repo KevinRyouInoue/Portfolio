@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-Professional portfolio website showcasing my skills, projects, and experience as a Software Engineer and Chemistry graduate from the University of Toronto. Features dark mode, smooth animations, and full responsive design built with Node.js, Express, and vanilla JavaScript.
+Professional portfolio website showcasing my skills, projects, and experience as a Software Engineer who graduated from University of Toronto. It features dark mode, smooth animations, and full responsive design built with Node.js, Express, and vanilla JavaScript.
 
 ## File Structure
 
