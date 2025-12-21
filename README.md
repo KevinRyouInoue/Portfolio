@@ -1,6 +1,6 @@
 # Kevin Ryou Inoue - Portfolio Website
 
-🔗 **[Live Site](https://portfolio-kevin-inoue-ryou.vercel.app/)**
+🔗 **[https://portfolio-kevin-inoue-ryou.vercel.app/](https://portfolio-kevin-inoue-ryou.vercel.app/)**
 
 ## Project Overview
 
@@ -9,20 +9,20 @@ Professional portfolio website showcasing my skills, projects, and experience as
 ## File Structure
 
 ### **[server.js](server.js)** - Backend Server
-- Express.js server on port 3001 with security measures (disabled directory listing, dotfiles ignored)
+- Express.js server on port 3001 with security measures
 - Stateless architecture ideal for Vercel serverless deployment
-- **Why Express?** Provides flexibility for future API endpoints while maintaining simplicity
+- Why Express? Provides flexibility for future API endpoints while maintaining simplicity
 
 ### **[public/index.html](public/index.html)** - Frontend Structure  
-- Single-page application with seven sections: navigation, hero, about, projects, experience, education, contact
-- Five detailed project cards with images, GitHub links, and technology tags
-- **Why single-page?** Creates fluid user experience with smooth scrolling instead of page reloads
+- Single-page application with six sections: Home, about, projects, experience, education, contact
+- Displays detailed projects with images, GitHub links, and technology tags
+- Simplicity is essential. Creates fluid user experience with smooth scrolling instead of page reloads
 
-### **[public/css/style.css](public/css/style.css)** - Styling (1000+ lines)
+### **[public/css/style.css](public/css/style.css)** - Styling
 - Dual-theme system using CSS custom properties
-- Orange accent color (#ff9d5c) for brand consistency across themes
+- Orange accent color for brand consistency across themes
 - Mobile-first responsive design with breakpoints at 768px, 1024px, 1400px
-- **Why CSS variables?** Single-attribute theme switching with natural cascade behavior
+- The most used code this website was CDD, used for single-attribute theme switching with natural cascade behavior
 
 ### **[public/js/main.js](public/js/main.js)** - Interactive Features
 - Theme toggle with localStorage persistence
@@ -47,3 +47,7 @@ npm start       # Production mode
 ```
 
 Access at `http://localhost:3001`
+
+acknowledgement:
+Github Copilot helped to complete this portfolio.
+I mostly used it for UI/UX design for nativate readers.
